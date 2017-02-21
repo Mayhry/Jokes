@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="lib/ionic/css/ionic.min.css">
+</head>
+<body>
+
+
+    <ng-view></ng-view>
+
+    <div class="tabs tabs-icon-top tabs-positive">
+        <a href="#/gif" class="tab-item" ng-class="{active:'#/gif'==status}">
+            <i class="icon ion-ios-home"></i>
+            搞笑动图
+        </a>
+        <a href="#/photo" class="tab-item" ng-class="{active:'#/photo'==status}">
+            <i class="icon ion-ios-star"></i>
+            趣味图文
+        </a>
+        <a href="#/text" class="tab-item" ng-class="{active:'#text'==status}">
+            <i class="icon ion-ios-book"></i>
+            我是段子手
+        </a>
+    </div>
+
+<script src="lib/ionic/js/ionic.bundle.min.js"></script>
+<script src="lib/.1.5.9@angular-route/angular-route.min.js"></script>
+<script src="js/controller.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
