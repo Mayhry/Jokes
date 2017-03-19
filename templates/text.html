@@ -1,0 +1,11 @@
+<ion-view view-title="内涵段子">
+	<ion-content>
+		<ion-list>
+			<ion-item ng-repeat="item in items" class="item-text-wrap">
+				<h2>{{item.title}}</h2>
+				<p>{{item.text}}</p>
+			</ion-item>
+			<ion-infinite-scroll on-infinite="doInfinite()"></ion-infinite-scroll>
+		</ion-list>
+	</ion-content>
+</ion-view>
